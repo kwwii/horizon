@@ -78,11 +78,15 @@ h1.brand a {
     }
   }
 }
+
+.dropdown { outline: none; }
 #tenant_switcher {
       background: url(/static/dashboard/img/suse_drop_arrow.png) 140px center no-repeat;
     }
 #user_info > a {
   color: #eee;
+  margin-top: 6px;
+  display: inline-block;
 }
 
 /* Menu on the */
@@ -161,6 +165,7 @@ h1.brand a {
     border-right: 5px solid @scopenstack-aside-menu-hyperlink-hover;
     margin-left: 30px;
   }
+  ul li:last-child { margin-bottom: 15px; }
 }
 .page-header { padding-top: 10px; }
 
@@ -204,5 +209,17 @@ background: #f7f7f7;
   border-color: #ccc;
 }
 
-#topologyCanvasContainer { background-color: #fff }
+#content_body {
+  dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+  }
+  dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+  }
+}
 
+#topologyCanvasContainer { background-color: #fff }
